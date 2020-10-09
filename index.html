@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel='stylesheet' href='style.css'>
+  </head>
+  <body>
+    <h1>To-Do'er</h1>
+    <div class="forms">
+      <div class="newTodo">
+        <select id="availableProjs"></select>
+        <input type="text" id="newTodoTit" placeholder="Title" required>
+        <input type="text" id="newTodoDes" placeholder="Description">
+        <input type="date" id="newTodoDue">
+        <input type="range" id="newTodoStat" max="2">
+        <button id="submitTodo" onclick="submitTodo()">Add</button>
+      </div>
+      <div class="newProj">
+        <input type="text" id="newProjTitle" placeholder="Project Title">
+        <button id="submitProj" onclick="submitProj()">Add</button>
+      </div>
+    </div>
+    <ul class="container" id="container">
+    </ul>
+    <script src='script.js'></script>
+  </body>
+</html>

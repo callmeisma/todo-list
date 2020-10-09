@@ -1,0 +1,10 @@
+.projTodo {
+    display: flex;
+    align-content: space-around;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
