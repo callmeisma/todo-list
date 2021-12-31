@@ -1,10 +1,36 @@
-.projTodo {
-    display: flex;
-    align-content: space-around;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-li {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+i {
+  pointer-events: none;
+}
+
+/* Custom Tabs Colors */
+.nav-tabs .nav-item .nav-link {
+  color: #212529;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.nav-tabs .nav-item .nav-link.active .btn {
+  color: #fff;
+}
+.nav-tabs .nav-item .nav-link.active .btn:hover {
+  color: #ffc107;
+}
+.btn:hover {
+  color: #ffc107;
 }
